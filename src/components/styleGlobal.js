@@ -41,6 +41,17 @@ export const Formulario = styled.form`
         color: white;
     }
 
+    @media(max-width: 700px){
+        width: 80vw;
+        height: 78vh;
+        
+
+
+        h1{
+            width: 78.5vw;
+            font-size: 3em;
+        }
+    }
     
 `;
 
@@ -91,6 +102,23 @@ export const addLista = styled.div`
             cursor: pointer;
         }
     }
+
+    @media(max-width: 700px){
+        .AddTarefas{
+            height: 7.5vh;
+            width: 12vw;
+        }
+
+        .EntradaTarefas{
+            width: 50vw;
+        }
+
+        .LimparTarefas{
+            height: 7.5vh;
+            width: 12vw;
+        }
+
+    }
 `;
 
 export const Lista = styled.ol`
@@ -100,6 +128,11 @@ export const Lista = styled.ol`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @media(max-width: 700px){
+        width: 67.8vw;
+    }
+
 `;
 
 export const ItensLista = styled.div`
@@ -166,6 +199,21 @@ export const ItensLista = styled.div`
         text-decoration: line-through red;
         font-weight: 600;
         color: red;
-        
     }
+
+    @media(max-width: 700px){
+        height: 6vh;
+        width: 67.8vw;
+        padding-left: 5px;
+        border: solid greenyellow;
+        }
+
+        .Tarefa{
+            width: 40vw;
+            font-size: 1.3em;
+        }
+
+        .Delete{
+            width: 15vw;
+        }
 `;
